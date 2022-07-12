@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite verbose="10" name="plan-project-test">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="接口自动化" preserve-order="true">
+        <parameter name="reruntimes" value="0"></parameter>
+
+
+        <classes>
+            <class name="cn.oscar.ApiTest"/>
+            <!-- class name="cn.oscar.game.cases.ADX.Adx2345"/>
+            <class name="cn.oscar.game.cases.ADX.BadBid"/  -->
+
+
+
+        </classes>
+<!--
+        <packages>
+            <package name="cn.oscar.game.cases.ADX"/>
+        </packages>
+
+        <packages>
+            <package name="cn.oscar.game.cases.common"/>
+        </packages>
+        <packages>
+            <package name="cn.oscar.game.publics"/>
+        </packages>
+        <packages>
+            <package name="cn.oscar.game.service"/>
+        </packages>
+
+-->
+    </test>
+</suite>
